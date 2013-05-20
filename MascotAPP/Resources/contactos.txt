@@ -1,0 +1,7 @@
+Contactos
+
+El módulo Contactos está pensado para utilizarlo como mini agenda relacionada con tus mascotas. Por defecto existen 4 campos, que son los más habituales y usados en lo que se refiere a las mascotas. Veterinario, Tienda, Residencia y Peluquería. 
+
+Existe la opción de añadir 2 contactos extra.
+
+Para editar cualquiera de los contactos, sólo tienes que pulsa el botón de editar de la barra de navegación. Si por el contrario quieres eliminar el contacto, pulsa en el botón de eliminar de la barra de navegación.

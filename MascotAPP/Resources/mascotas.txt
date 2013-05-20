@@ -1,0 +1,11 @@
+Mascotas
+
+A través del módulo mascotas puedes añadir, editar y eliminar todas las mascotas que quieras. Los únicos campos obligatorios para cada mascota son la foto y el nombre. Los demás son opcionales, aunque recomendables. Ya que aumentan las funciones dentro de la aplicación.
+
+Animal y Raza
+
+Puedes seleccionar un animal de la lista. Y si no existe, por supuesto que puedes crear tus propios animales. 
+
+Lo mismo sucede con las razas. Como no puede ser de otra manera, cada raza va asociada a un tipo de animal. También puedes crear todas las que necesites.
+
+Los campos color, chip indentificativo, sexo y fecha de nacimiento son opcionales. La fecha es importante para calcular la edad. Dicha edad se utiliza para funciones específicas de otros módulos. Es recomendable rellenar todos los campos.

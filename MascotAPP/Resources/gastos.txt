@@ -1,0 +1,19 @@
+Módulo Gastos
+
+El módulo Gastos tiene como finalidad controlar y gestionar los gastos que tienes de tus mascotas. Si tienes más de una mascota, entonces el listado se presentará ordenado por mascotas y por orden cronológico al mismo tiempo.
+
+Todos los campos de cada gasto son obligatorios. 
+
+Mascota: La mascota dentro de tu lista para la cual has hecho el gasto.
+
+Categoría: La categoría principal de gasto. Normalmente se suelen tener una serie de gastos dentro de la misma categoría, por ejemplo “Veterinario”, “Alimentación”. Puedes añadir y eliminar las categorías que prefieras.
+
+Descripción: El campo descripción está diseñado para la organización de los gastos dentro de cada categoría. Aunque una misma descripción puede estar disponible en diferentes categorías.
+
+Precio: La cantidad en tu moneda del gasto en particular. MascotApp necesita un número con 2 decimales. Por tanto, si introduces una cantidad sin decimales, el sistema añade las cifras necesarias para cumplir con las dígitos de decenas y centenas. 
+
+Fecha: La fecha para la cual el gasto ha sido realizado.
+
+La funcionalidad del módulo gastos está mejorada con una vista gráfica mensual. En la versión actual de MascotApp, el gráfico sólo está disponible para los gastos mensuales, dependiendo de cada año. Dicho gráfico, muestra la suma por mensual de los gastos totales de todas las mascotas dentro de la aplicación. 
+
+Las opciones son “Año actual”, “Año Anterior”, “Seleccionar Año”, “Todo”. La última opción desactiva la función de gráfico.

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Animal" representedClassName="Animal" syncable="YES">
+        <attribute name="img" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="esRaza" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Raza" inverseName="perteneceAnimal" inverseEntity="Raza" syncable="YES"/>
+        <relationship name="perteceneMascota" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mascota" inverseName="esAnimal" inverseEntity="Mascota" syncable="YES"/>
+    </entity>
+    <entity name="Evento" representedClassName="EventosAgenda" syncable="YES">
+        <attribute name="aviso" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="calendario" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="hecho" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="mascota" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="perteneceMascota" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mascota" inverseName="tieneEvento" inverseEntity="Mascota" syncable="YES"/>
+    </entity>
+    <entity name="Gastos" representedClassName="Gastos" syncable="YES">
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precio" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="categoria" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GastosCategoria" inverseName="gasto" inverseEntity="GastosCategoria" syncable="YES"/>
+        <relationship name="perteceneMascota" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mascota" inverseName="tieneGastos" inverseEntity="Mascota" syncable="YES"/>
+        <relationship name="tienenombre" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="GastosNombre" inverseName="gastos" inverseEntity="GastosNombre" syncable="YES"/>
+    </entity>
+    <entity name="GastosCategoria" representedClassName="GastosCategoria" syncable="YES">
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="gasto" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Gastos" inverseName="categoria" inverseEntity="Gastos" syncable="YES"/>
+    </entity>
+    <entity name="GastosNombre" representedClassName="GastosNombre" syncable="YES">
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="gastos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Gastos" inverseName="tienenombre" inverseEntity="Gastos" syncable="YES"/>
+    </entity>
+    <entity name="Mascota" representedClassName="Mascota" syncable="YES">
+        <attribute name="animal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="img" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="img90" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nacimiento" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nacimientoEKID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="raza" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sexo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="esAnimal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Animal" inverseName="perteceneMascota" inverseEntity="Animal" syncable="YES"/>
+        <relationship name="tieneEvento" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Evento" inverseName="perteneceMascota" inverseEntity="Evento" syncable="YES"/>
+        <relationship name="tieneGastos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Gastos" inverseName="perteceneMascota" inverseEntity="Gastos" syncable="YES"/>
+        <relationship name="tienePeso" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pesos" inverseName="perteneceMascota" inverseEntity="Pesos" syncable="YES"/>
+    </entity>
+    <entity name="Pesos" representedClassName="Pesos" syncable="YES">
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="peso" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <relationship name="perteneceMascota" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Mascota" inverseName="tienePeso" inverseEntity="Mascota" syncable="YES"/>
+    </entity>
+    <entity name="Raza" representedClassName="Raza" syncable="YES">
+        <attribute name="img" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="perteneceAnimal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Animal" inverseName="esRaza" inverseEntity="Animal" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Animal" positionX="-297" positionY="-600" width="128" height="105"/>
+        <element name="Evento" positionX="-470" positionY="-162" width="128" height="180"/>
+        <element name="Gastos" positionX="214" positionY="171" width="128" height="135"/>
+        <element name="GastosCategoria" positionX="349" positionY="-138" width="128" height="75"/>
+        <element name="GastosNombre" positionX="-144" positionY="-3" width="128" height="75"/>
+        <element name="Mascota" positionX="-81" positionY="-501" width="128" height="255"/>
+        <element name="Pesos" positionX="178" positionY="-261" width="128" height="90"/>
+        <element name="Raza" positionX="-459" positionY="-450" width="128" height="90"/>
+    </elements>
+</model>

@@ -1,0 +1,13 @@
+Módulo Agenda
+
+El módulo Agenda de te permite mantener organizadas las tareas de todas tus mascotas. Desde el menú principal dentro de Agenda puedes añadir, editar ó eliminar tareas existentes. 
+
+Cada nota de la agenda contiene unos campos que son obligatorios: Fecha, Título y Mascota. El resto son opcionales. 
+
+Descripción: para añadir detalles de la tarea. 
+
+Marcar como realizada: si quieres que la tarea se cree con la opción de “realizada” marcada. 
+
+Alarma para configurar una alarma de aviso de la tarea cuando tu prefieras.
+
+Las alarmas pueden ser desactivadas desde el menú de centro de notificaciones de tu iPhone.
