@@ -61,6 +61,7 @@
 		7E485F6B16234E480060DC1F /* list-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E485F0516234E480060DC1F /* list-item@2x.png */; };
 		7E485F8F162351A50060DC1F /* 82-dog-paw.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E485F8E162351A50060DC1F /* 82-dog-paw.png */; };
 		7E485F9316243D440060DC1F /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E485F9216243D430060DC1F /* UIImage+fixOrientation.m */; };
+		7E4C9055174AB2D40036E354 /* PesosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4C9054174AB2D40036E354 /* PesosViewController.m */; };
 		7E4D81F516271C0000A881ED /* 82-dog-paw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D81F416271C0000A881ED /* 82-dog-paw@2x.png */; };
 		7E51B7FA15ADF5F40045640A /* CalendarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E51B7F915ADF5F40045640A /* CalendarioViewController.m */; };
 		7E53622816498CF000E068FA /* alarma-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E53620916498CF000E068FA /* alarma-icon@2x.png */; };
@@ -327,6 +328,8 @@
 		7E485F8E162351A50060DC1F /* 82-dog-paw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "82-dog-paw.png"; sourceTree = "<group>"; };
 		7E485F9116243D430060DC1F /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
 		7E485F9216243D430060DC1F /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		7E4C9053174AB2D40036E354 /* PesosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PesosViewController.h; sourceTree = "<group>"; };
+		7E4C9054174AB2D40036E354 /* PesosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PesosViewController.m; sourceTree = "<group>"; };
 		7E4D81F416271C0000A881ED /* 82-dog-paw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "82-dog-paw@2x.png"; sourceTree = "<group>"; };
 		7E51B7F815ADF5F40045640A /* CalendarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarioViewController.h; sourceTree = "<group>"; };
 		7E51B7F915ADF5F40045640A /* CalendarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarioViewController.m; sourceTree = "<group>"; };
@@ -1081,6 +1084,8 @@
 				7E777E7415A9F15B004BCC2D /* RazaTableViewController.m */,
 				7E7F7E74159DB3EB00685EBC /* MascotasTableViewController.h */,
 				7E7F7E75159DB3EB00685EBC /* MascotasTableViewController.m */,
+				7E4C9053174AB2D40036E354 /* PesosViewController.h */,
+				7E4C9054174AB2D40036E354 /* PesosViewController.m */,
 			);
 			name = Mascotas;
 			sourceTree = "<group>";
@@ -1484,6 +1489,7 @@
 				7EE70E691665483800F673C1 /* EventosAgenda.m in Sources */,
 				7EE70E6C1665483800F673C1 /* GastosNombre.m in Sources */,
 				7EE70E6F1665483800F673C1 /* Mascota.m in Sources */,
+				7E4C9055174AB2D40036E354 /* PesosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
