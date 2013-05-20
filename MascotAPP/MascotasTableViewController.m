@@ -126,7 +126,7 @@
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
 
     cell.backgroundColor = [UIColor whiteColor];
-    cell.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"celda-mascota"]];
+    //cell.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"celda-mascota"]];
 }
 
 
